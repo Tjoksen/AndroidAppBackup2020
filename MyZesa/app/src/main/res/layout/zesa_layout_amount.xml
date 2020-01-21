@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:text="Use  Electricity Wisely the same $3 buys 50kwh at first then  10kwh ,then 7.5kwh at last"
+        />
+    <ScrollView
+        android:id="@+id/scroll"
+        android:padding="5dp"
+        android:layout_below="@+id/notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/toplayout"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/how_much"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/amount_money_used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:background="@drawable/inputs"
+        android:hint="Amount  Used "
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:orientation="vertical"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:layout_below="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="How much do you want to buy : ZWL$"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/amount_money_to_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:inputType="number"
+            android:background="@drawable/inputs"
+            android:padding="7dp"
+            android:hint="Amount to buy "
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amount_energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:text="Energy Amount"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_layout"
+        android:text="Calculate .."
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+        <Button
+            android:id="@+id/button_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_calculate"
+            android:text="More..."
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:layout_centerHorizontal="true"
+            />
+    <TextView
+        android:id="@+id/explanation_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button_more"
+        android:text="Explanation : NB: Calculates for domestic usage only"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/textinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/explanation_heading"
+        android:text="@string/mainpage_info"
+
+        />
+    <TextView
+        android:id="@+id/textsign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textinfo"
+        android:text="powered by : talentjoko@gmail.com"
+
+        />
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

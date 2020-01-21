@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <!--Color of text and icon when selected-->
+        <item name="android:colorPrimary">@color/colorPrimaryDark</item>
+        <!--background color when selected-->
+        <item name="android:colorControlHighlight">@color/colorProfile</item>
+
+    </style>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/toplayout"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/amount_energy_used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="Amount of Energy spent so far(monthly)in KWh:"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/energy_amount_used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:background="@drawable/inputs"
+        android:hint="Amount  Used here"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="397dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/toplayout"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:textColor="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount to Use Now(Monthly) KWh:"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amount_energy_to_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/inputs"
+            android:inputType="number"
+            android:hint="Amount to use "
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amount_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Amount ZWL$"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_calculate_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_layout"
+        android:text="Calculate"
+        android:padding="10dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/back_to_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_calculate_money"
+        android:text="Back"
+        android:padding="10dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/textsign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+
+        android:text="powered by : talentjoko@gmail.com"
+
+        />
+</RelativeLayout>

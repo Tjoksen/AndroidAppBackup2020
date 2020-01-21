@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageSliderActivity">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_browse"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="350dp">
+
+    </androidx.viewpager.widget.ViewPager>
+    <TextView
+        android:id="@+id/image_username"
+        android:text="Talent Jokonya"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/view_pager_browse"
+        android:layout_toRightOf="@+id/image_age"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/image_age"
+        android:text="27yrs,"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/view_pager_browse"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/image_country"
+        android:text="Harare"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/image_age"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
