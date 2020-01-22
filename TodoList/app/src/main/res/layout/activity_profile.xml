@@ -153,9 +153,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Country of Birth"
             android:enabled="false"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView44" />
@@ -168,9 +167,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="D.O.B"
             android:enabled="false"
+            android:hint="D.O.B"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/update_country_of_birth_edt" />
@@ -184,8 +183,8 @@
             android:layout_marginEnd="8dp"
             android:ems="10"
             android:enabled="false"
+            android:hint="Email"
             android:inputType="textEmailAddress"
-            android:text="Email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/update_d_o_b_edt" />
@@ -198,9 +197,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Gender"
             android:enabled="false"
+            android:hint="Gender"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/update_email_edt" />
@@ -214,7 +213,6 @@
             android:layout_marginEnd="8dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Id_Type"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/update_id_gender_edt" />
@@ -255,7 +253,6 @@
             android:layout_marginEnd="8dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Street Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView45" />
@@ -268,8 +265,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
+            android:hint="Suburb"
             android:inputType="textPersonName"
-            android:text="Suburb"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/update_street_name" />
@@ -283,7 +280,6 @@
             android:layout_marginEnd="8dp"
             android:ems="10"
             android:inputType="textPostalAddress"
-            android:text="City"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/update_suburb_edt" />
@@ -297,7 +293,6 @@
             android:layout_marginEnd="8dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Province"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/update_city_edt" />
@@ -323,6 +318,26 @@
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/first_name_edt"
             app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_edit_profile" />
+
+        <ImageButton
+            android:id="@+id/enable_edit_profile_id_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_button_btn"
+            app:srcCompat="@drawable/ic_edit_profile" />
+
+        <ImageButton
+            android:id="@+id/enable_edit_profile_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_id_details_btn"
             app:srcCompat="@drawable/ic_edit_profile" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

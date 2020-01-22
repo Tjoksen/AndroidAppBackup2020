@@ -10,7 +10,9 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.SearchView;
 
 import com.example.myapplication.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -23,13 +25,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.talentjokonya.todoapplication.data.db.Todo;
+import com.talentjokonya.todoapplication.view.ui.PostCrudActivity;
 import com.talentjokonya.todoapplication.view.ui.auth.LoginActivity;
 
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class AdminActivity extends AppCompatActivity {
+public class AdminActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, MenuItem.OnActionExpandListener {
     private FirebaseAuth fAuth;
     private GridLayoutManager gridLayoutManager;
     @BindView(R.id.admin_recycler)
@@ -90,7 +93,7 @@ public class AdminActivity extends AppCompatActivity {
                             String surname = dataSnapshot.child("surname").getValue().toString();
 
                             viewHolder.itemView.setOnClickListener(view -> {
-                                Intent intent = new Intent(AdminActivity.this, NewTodoActivity.class);
+                                Intent intent = new Intent(AdminActivity.this, PostCrudActivity.class);
                                 intent.putExtra("noteId", noteId);
                                 startActivity(intent);
                             });
@@ -127,5 +130,25 @@ public class AdminActivity extends AppCompatActivity {
     private int dpToPx(int dp) {
         Resources r = getResources();
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
+    }
+
+    @Override
+    public boolean onMenuItemActionExpand(MenuItem item) {
+        return false;
+    }
+
+    @Override
+    public boolean onMenuItemActionCollapse(MenuItem item) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        return false;
     }
 }
