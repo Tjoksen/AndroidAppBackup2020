@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<group>
+<item
+    android:id="@+id/nav_new"
+    android:title="Add New Task"
+
+    />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+
+        />
+    <item
+        android:id="@+id/nav_all"
+        android:title="All Tasks"
+
+        />
+    <item
+        android:id="@+id/nav_urgent"
+        android:title="Urgent"
+
+        />
+    <item
+        android:id="@+id/nav_pending"
+        android:title="Pending"
+
+        />
+</group>
+
+    <group>
+
+    <item
+        android:id="@+id/nav_completed"
+        android:title="Completed"
+
+        />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+
+        />
+    </group>
+
+</menu>

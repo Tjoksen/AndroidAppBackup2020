@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "391013780746",
+    "firebase_url": "https://todoapp-2ae19.firebaseio.com",
+    "project_id": "todoapp-2ae19",
+    "storage_bucket": "todoapp-2ae19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391013780746:android:cee2526540e6b522667ef3",
+        "android_client_info": {
+          "package_name": "com.talentjoko.zimtwitter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391013780746-ahbt1cbhsb2q3bb0p86occe2ut3ftljt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.talentjoko.zimtwitter",
+            "certificate_hash": "44e6bb12d99c4027eec0dc151db26d4ae1d48db7"
+          }
+        },
+        {
+          "client_id": "391013780746-fkpmcbi6ppq3e2m8okd4vu3d2r932d48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCadm7Afgfnzxnbe6GdJ0crJLywXSMCNpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391013780746-fkpmcbi6ppq3e2m8okd4vu3d2r932d48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391013780746:android:d6bd27de82f77c7e667ef3",
+        "android_client_info": {
+          "package_name": "com.talentjokonya.todoapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391013780746-d4a10fubi89bp5ongdqhkhi8kr1076cd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.talentjokonya.todoapplication",
+            "certificate_hash": "44e6bb12d99c4027eec0dc151db26d4ae1d48db7"
+          }
+        },
+        {
+          "client_id": "391013780746-fkpmcbi6ppq3e2m8okd4vu3d2r932d48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCadm7Afgfnzxnbe6GdJ0crJLywXSMCNpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391013780746-fkpmcbi6ppq3e2m8okd4vu3d2r932d48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391013780746:android:391f3a59578f6681667ef3",
+        "android_client_info": {
+          "package_name": "talent.jokonya.dating_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391013780746-fkpmcbi6ppq3e2m8okd4vu3d2r932d48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCadm7Afgfnzxnbe6GdJ0crJLywXSMCNpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391013780746-fkpmcbi6ppq3e2m8okd4vu3d2r932d48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

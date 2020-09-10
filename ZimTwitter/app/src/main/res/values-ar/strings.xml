@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sign_in_with_twitter">Pinda NeTwitter</string>
+    <string name="cancel">Bvisa</string>
+    <string name="retry">Zama Futi!</string>
+    <string name="network_connection_error_title">Masai sai Akadhakwa!</string>
+    <string name="network_connection_error_message">Ma1 wena wotomirira kana masai sai adzoka !</string>
+    <string name="home">Pamba</string>
+    <string name="followers">Vateveri</string>
+</resources>
