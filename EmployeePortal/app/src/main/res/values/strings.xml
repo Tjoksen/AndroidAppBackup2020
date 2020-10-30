@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LeaveAppJsc</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">JSC  STAFF PORTAL</string>
+    <string name="nav_header_subtitle">www.jsc.org.zw</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_check_in_out">Check In/Out </string>
+    <string name="menu_todo_list">Todo List</string>
+    <string name="menu_leave">My Leave</string>
+
+    <string name="menu_events">Events</string>
+    <string name="menu_announcement">Notices</string>
+    <string name="menu_vacancies">Vacancies</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="check_in_button">CHECK-IN</string>
+    <string name="add_item">Add Item</string>
+    <string name="enter_a_new_item">Enter a new item</string>
+    <string name="submit">submit todo</string>
+    <string name="menu_contactus">Contact Us</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="financial">FINANCIALS</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appraisal">Appraisal</string>
+    <string name="leave_days">Leave Days</string>
+    <string name="todo_list">Todo List</string>
+</resources>

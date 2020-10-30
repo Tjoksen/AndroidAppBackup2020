@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_check_in_out"
+            android:icon="@drawable/checkinout"
+            android:title="@string/menu_check_in_out" />
+        <item
+            android:id="@+id/nav_todo_list"
+            android:icon="@drawable/todoicon"
+            android:title="@string/menu_todo_list" />
+        <item
+            android:id="@+id/nav_leave"
+            android:icon="@drawable/leaveicon"
+            android:title="@string/menu_leave" />
+        <item
+            android:id="@+id/nav_announcement"
+            android:icon="@drawable/notice"
+            android:title="@string/menu_announcement" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/event"
+            android:title="@string/menu_events" />
+
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+
+
+        <item
+            android:id="@+id/nav_vacancies"
+            android:icon="@drawable/vacancies"
+            android:title="@string/menu_vacancies" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/contactus"
+            android:title="@string/menu_contactus" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/aboutus"
+            android:title="@string/menu_aboutus" />
+    </group>
+</menu>

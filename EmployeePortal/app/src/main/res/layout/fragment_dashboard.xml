@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/constraintLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="24dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="24dp"
+           android:orientation="horizontal"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/events"
+               android:layout_width="96dp"
+               android:layout_height="96dp"
+               android:layout_marginStart="8dp"
+               android:padding="15dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/event"
+               app:civ_border_color="#FF000000"
+               app:civ_border_width="2dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="8dp"
+               android:text="@string/appraisal"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/events" />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/checkinout"
+               android:layout_width="96dp"
+               android:layout_height="96dp"
+               android:layout_marginEnd="8dp"
+               android:padding="15dp"
+               android:src="@drawable/checkinout"
+               app:civ_border_color="#FF000000"
+               app:civ_border_width="2dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginEnd="8dp"
+               android:text="CHECK IN/OUT"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/checkinout" />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+
+           android:layout_marginStart="24dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="24dp"
+           android:orientation="horizontal"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/leavedays"
+               android:layout_width="96dp"
+               android:layout_height="96dp"
+               android:layout_marginStart="8dp"
+               android:padding="15dp"
+               android:src="@drawable/leaveicon"
+               app:civ_border_color="#FF000000"
+               app:civ_border_width="2dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="8dp"
+               android:fontFamily="@font/montserrat_bold"
+               android:text="@string/leave_days"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/leavedays" />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/todolist"
+               android:layout_width="96dp"
+               android:layout_height="96dp"
+               android:layout_marginEnd="8dp"
+               android:padding="15dp"
+               android:src="@drawable/todoicon"
+               app:civ_border_color="#FF000000"
+               app:civ_border_width="2dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginEnd="16dp"
+               android:text="@string/todo_list"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/todolist" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/third"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+
+           android:layout_marginStart="24dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="24dp"
+           android:orientation="horizontal"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/notices"
+               android:layout_width="96dp"
+               android:layout_height="96dp"
+               android:layout_marginStart="8dp"
+               android:padding="15dp"
+               android:src="@drawable/notice"
+               app:civ_border_color="#FF000000"
+               app:civ_border_width="2dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="8dp"
+               android:text="NOTICES"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/notices" />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/vacancy"
+               android:layout_width="96dp"
+               android:layout_height="96dp"
+               android:layout_marginEnd="8dp"
+               android:padding="15dp"
+               android:src="@drawable/vacancies"
+               app:civ_border_color="#FF000000"
+               app:civ_border_width="2dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginEnd="16dp"
+               android:text="VACANCIES"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/vacancy" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/fourth"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_marginStart="24dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="24dp"
+           android:orientation="horizontal"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/third">
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/memo"
+               android:layout_width="96dp"
+               android:layout_height="96dp"
+               android:layout_marginStart="8dp"
+               android:padding="15dp"
+               android:src="@drawable/memo"
+               app:civ_border_color="#FF000000"
+               app:civ_border_width="2dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="8dp"
+               android:text="@string/financial"
+               android:textAllCaps="true"
+               android:textColor="@android:color/holo_blue_dark"
+               android:textStyle="bold"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/memo" />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/more"
+               android:layout_width="96dp"
+               android:layout_height="96dp"
+               android:layout_marginEnd="8dp"
+               android:padding="15dp"
+               android:src="@drawable/more"
+               app:civ_border_color="#FF000000"
+               app:civ_border_width="2dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginEnd="16dp"
+               android:text="VIEW MORE"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/more" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
